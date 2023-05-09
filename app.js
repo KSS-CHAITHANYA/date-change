@@ -4,7 +4,7 @@ const app = express();
 app.get("/", (request, response) => {
   const date = new Date();
   const fDate = `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`;
-  response.send(fdate);
+  response.send(fDate);
 });
 
 module.exports = app;
